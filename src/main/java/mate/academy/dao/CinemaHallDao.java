@@ -7,7 +7,7 @@ import mate.academy.model.CinemaHall;
 public interface CinemaHallDao {
     CinemaHall add(CinemaHall cinemaHall);
 
-    CinemaHall get(Long id);
+    Optional<CinemaHall> get(Long id);
 
     List<CinemaHall> getAll();
 }

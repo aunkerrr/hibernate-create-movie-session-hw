@@ -6,7 +6,7 @@
 
         <!-- JDBC Database Connection Settings -->
         <property name="hibernate.connection.driver_class">org.mariadb.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mariadb://localhost:3309/hibernate_db</property>
+        <property name="hibernate.connection.url">jdbc:mariadb://localhost:3306/cinema_movie_session</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">kali</property>
 

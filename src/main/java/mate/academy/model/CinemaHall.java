@@ -1,6 +1,10 @@
 package mate.academy.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "cinema_halls")
@@ -11,7 +15,7 @@ public class CinemaHall {
     private int capacity;
     private String description;
 
-    public CinemaHall () {
+    public CinemaHall() {
     }
 
     public Long getId() {
@@ -40,10 +44,10 @@ public class CinemaHall {
 
     @Override
     public String toString() {
-        return "CinemaHall{" +
-                "id=" + id +
-                ", capacity=" + capacity +
-                ", description='" + description + '\'' +
-                '}';
+        return "CinemaHall{"
+                + "id=" + id
+                + ", capacity=" + capacity
+                + ", description='" + description + '\''
+                + '}';
     }
 }

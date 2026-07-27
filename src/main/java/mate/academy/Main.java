@@ -41,11 +41,11 @@ public class Main {
         movieSessionService.add(tomorrowSession);
 
         LocalDate tomorrowDate = LocalDate.now().plusDays(1);
-        List<MovieSession> availiableSessions = movieSessionService
+        List<MovieSession> availableSessions = movieSessionService
                 .findAvailableSessions(fastAndFurious.getId(), tomorrowDate);
 
         System.out.println("Available sessions for tomorrow: ");
-        availiableSessions.forEach(System.out::println);
+        availableSessions.forEach(System.out::println);
 
         System.out.println("All cinema halls available: ");
         System.out.println(cinemaHallService.getAll());
